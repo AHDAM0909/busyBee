@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* =========================
+   NAVBAR
+========================= */
+
+.Header{
+  width: 100%;
+  background-color: #0F4C5C;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* =========================
+   NAV CONTAINER
+========================= */
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo h1{
+  color: #00B4D8;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo h1:hover{
+  color: #FCA311;
+}
+
+/* LOGO SPAN */
+
+.logo-span{
+  color: #FCA311;
+}
+
+/* =========================
+   DESKTOP NAV LINKS
+========================= */
+
+.nav-desktop{
+  display: flex;
+  gap: 30px;
+}
+
+/* NAV LINK */
+
+.nav-links{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* HOVER COLOR */
+
+.nav-links:hover{
+  color: #FCA311;
+}
+
+/* =========================
+   UNDERLINE ANIMATION
+========================= */
+
+.nav-links::after{
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #FCA311;
+
+  transition: 0.3s ease;
+}
+
+/* SHOW UNDERLINE */
+
+.nav-links:hover::after{
+  width: 100%;
+}
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-toggle{
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.nav-mobile{
+  display: none;
+  flex-direction: column;
+  background-color: #0F4C5C;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* SHOW MOBILE MENU */
+
+.nav-mobile.active{
+  display: flex;
+}
+
+/* MOBILE LINKS */
+
+.nav-links.mobile{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+  .nav-desktop{
+    display: none;
+  }
+
+  .menu-toggle{
+    display: block;
+  }
+
+  .logo h1{
+    font-size: 20px;
+  }
+  .nav-mobile{
+  display: block;
+  }
+
+}

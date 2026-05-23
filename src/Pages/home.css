@@ -1,0 +1,249 @@
+/* =========================================
+   BUSYBEE DESIGN SYSTEM IMPLEMENTATION
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel-inner {
+  position: relative;
+}
+.carousel-images{
+  position: relative;
+}
+
+.carousel-description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+  z-index: 10;
+  width: 100%;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-indicators {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+
+ 
+
+/* =========================
+   HOW IT WORKS SECTION
+========================= */
+
+.how-it-works{
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #F9FAFB;
+  font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.how-it-works-content h1{
+  text-align: center;
+  font-size: 24px;
+  color: #0F4C5C;
+  margin-bottom: 50px;
+}
+
+/* =========================
+   ALL CARDS
+========================= */
+
+.allworkStep{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   SINGLE CARD
+========================= */
+
+.how-it-works-steps{
+  width: 100%;
+  max-width: 330px;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #E5E7EB;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  transition: 0.4s ease;
+
+  cursor: pointer;
+}
+
+/* CARD HOVER */
+
+.how-it-works-steps:hover{
+  transform: translateY(-20px);
+
+  box-shadow: 0 15px 25px rgba(0,0,0,0.10);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.icon{
+  margin-bottom: 20px;
+}
+
+.icon i{
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background-color: #FCA311;
+
+  color: white;
+
+  font-size: 32px;
+
+  transition: 0.5s ease;
+}
+
+/* ICON ROTATE */
+
+.how-it-works-steps:hover .icon i{
+  transform: rotate(360deg);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.workService h3{
+  font-size: 18px;
+  color: #1F2937;
+  margin-bottom: 15px;
+
+  position: relative;
+  display: inline-block;
+}
+
+/* UNDERLINE */
+
+.workService h3::after{
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 3px;
+
+  background-color: #FCA311;
+
+  transition: 0.4s ease;
+}
+
+/* UNDERLINE ANIMATION */
+
+.how-it-works-steps:hover .workService h3::after{
+  width: 100%;
+}
+
+.workService p{
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.7;
+}
+
+.downloadService{
+  width: 100%;
+  background-color: #FCA311;
+  padding: 60px 20px;
+  color: white;
+  margin: 3rem auto;
+  max-width: 1200px;
+    height: 100%;
+}
+.downloadService-conatiner {
+  width: 100%;
+  max-width: 30px;
+}
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+  .allworkStep{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works-content h1{
+    font-size: 20px;
+  }
+
+}
