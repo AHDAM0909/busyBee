@@ -32,3 +32,24 @@
     width: 140px;
   }
 }
+.about-mission{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+}
+.about-mission-content{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-mission-content h2{
+  font-size: 2rem;
+  color: #0f4c5c;
+  margin-bottom: 20px;
+}
+.about-mission-content p{
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}

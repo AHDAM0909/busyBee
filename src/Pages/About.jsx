@@ -13,6 +13,12 @@ const About = () => {
                 
         </div>
       </secton>
+      <section className="about-mission">
+        <div className="about-mission-content">
+          <h2>Our Mission</h2>
+          <p>At BusyBee, our mission is to simplify everyday living by Connecting busy professionals and families with trusted, reliable service providers. we aim to save time, reduce stress, and bring quality services closer to the people who need them most.</p>
+        </div>
+      </section>
       </div>
   )
 }
