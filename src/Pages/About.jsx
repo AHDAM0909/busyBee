@@ -1,6 +1,9 @@
 import React from 'react'
 import "./About.css"
 import busybeeLogo from "../assets/images/busybeeLogo.jpeg"
+import chef from "../assets/images/chef.png" 
+import Housekeeping from "../assets/images/Housekeeping.png"
+import Laundry from "../assets/images/Laundry.png"
 
 const About = () => {
   return (
@@ -19,6 +22,28 @@ const About = () => {
           <p>At BusyBee, our mission is to simplify everyday living by Connecting busy professionals and families with trusted, reliable service providers. we aim to save time, reduce stress, and bring quality services closer to the people who need them most.</p>
         </div>
       </section>
+             <section className="about-services">
+               <div className="about-services-content">
+                  <h2>Our Services</h2>
+                     <div className="service-grid">
+                      <div className='Service-card'>
+                        <img src={Housekeeping} alt='Housekeeping'/>
+                        <h3>Housekeeping</h3>
+                        <p>Professional cleaning and housekeeping services tailored to your schedule</p>
+                      </div>
+                      <div className='Service-card'>
+                        <img src={Laundry} alt='Laundry Service'/>
+                        <h3>Laundry</h3>
+                        <p>Convenieent Laundry services designed to save your time and effort</p>
+                             </div>
+                          <div className='Service-card'>
+                            <img src={chef} alt='Private Chef'/>
+                             <h3>Private chef</h3>                   
+                    <p>Enjoy freshly prepared meals  from experienced culinary professionals</p>
+                          </div>       
+                      </div>   
+               </div>
+             </section>
       </div>
   )
 }

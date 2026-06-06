@@ -53,3 +53,53 @@
   color: #6b7280;
   line-height: 1.6;
 }
+.about-services{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  font-family: "Inter" sans-serif;
+}
+.about-services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-services-content h2 {
+  text-align: center;
+  color: #0f4c5c;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.service-grid{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.Service-card{
+  max-width: 320px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.Service-card:hover{
+  transform: translateY(-8px);
+}
+.Service-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.Service-card h3{
+  color: #0f4c5c;
+  margin-bottom: 10px;
+}
+.Service-card p{
+  color: #6b7280;
+  line-height: 1.6;
+}
