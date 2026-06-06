@@ -147,3 +147,39 @@
   color: #6b7280;
   line-height: 1.6;
 }
+.about-cta{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #FCA311;
+  font-family: "Inter" sans-serif;
+}
+.about-cta-content{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-cta-content h2{
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  }
+  .about-cta-content p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  .about-cta-content button{
+    background-color: white;
+    color: #0f4c5c;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+    .about-cta-content button:hover{
+      transform: translateY(-3px);
+    }

@@ -68,6 +68,13 @@ const About = () => {
 
                   </div>
              </section>
+             <section className='about-cta'>
+              <div className='about-cta-content'>
+                <h2>Ready to Simplify Your Daily Routine?</h2>
+                <p>Let BusyBee connect you with trusted professionals for your household and lifestyle needs</p>
+                <button>Explore Services</button>
+              </div>
+             </section>
       </div>
   )
 }
