@@ -103,3 +103,47 @@
   color: #6b7280;
   line-height: 1.6;
 }
+.Why-us{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: white;
+  font-family: "Inter" sans-serif;
+}
+.Why-us-content{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.Why-us h2{
+  text-align: center;
+  color: #0f4c5c;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.Why-grid{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.Why-card{
+  max-width: 260px;
+  background-color: #f9fafb;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-align: center; 
+
+  transition: 0.3 ease;
+}
+.Why-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.Why-card h3{
+  color: #0f4c5c;
+  margin-bottom: 15px;
+}
+.Why-card p{
+  color: #6b7280;
+  line-height: 1.6;
+}

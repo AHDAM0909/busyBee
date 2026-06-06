@@ -44,6 +44,30 @@ const About = () => {
                       </div>   
                </div>
              </section>
+             <section className="Why-us">
+                  <div className='Why-us-content'>
+                    <h2>Why Choose BusyBee</h2>
+                    <div className='Why-grid'>
+                     <div className='Why-card'>
+                       <h3>Verified Professionals</h3>
+                      <p>Every service provider is carefully selected to ensure quality and reliability.</p>
+                     </div>
+                     <div className='Why-card'>
+                      <h3>Flexible Scheduling</h3>
+                      <p>Book services at times that fits your busy lifestyle.</p>
+                     </div>
+                     <div className='Why-card'>
+                      <h3>Quality Service</h3>
+                      <p>We focus on delivering exceptional experiences for every customer</p>
+                     </div>
+                      <div className='Why-card'>
+                        <h3>Customer Satisfaction</h3>
+                        <p> Your comfort and peace of mind remain our highest priorities.</p>
+                      </div>
+                    </div>
+
+                  </div>
+             </section>
       </div>
   )
 }
