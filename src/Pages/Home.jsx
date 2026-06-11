@@ -67,8 +67,7 @@ const Home = ({ products }) => {
         <div className="allworkStep">
 
           {/* CARD 1 */}
-          <div className='how-it-works-steps 
-                    '>
+          <div className='how-it-works-steps '>
 
             <div className='icon'>
               <i className=''>
@@ -90,8 +89,7 @@ const Home = ({ products }) => {
           </div>
 
           {/* CARD 2 */}
-          <div className='how-it-works-steps 
-                   '>
+          <div className='how-it-works-steps '>
 
             <div className='icon'>
               <i >
@@ -118,7 +116,7 @@ const Home = ({ products }) => {
 
             <div className='icon'>
               <i >
-               <FaRegSmile />
+                <FaRegSmile />
               </i>
             </div>
 
@@ -137,18 +135,38 @@ const Home = ({ products }) => {
         </div>
       </div>
 
-    <div className="downloadService">
-      <div  className='downloadService-container'>
-        <h1>Down load the service link app</h1>
+      <div className="downloadService">
+        <div>
+          <div className='downloadService-container'>
+            <h1>Download the BusyBee App</h1>
+          </div>
+
+          <div className="downloadService-content">
+            <p>Every professional on our platform undergoes a rigorous vetting process and security background check. Your safety and peace of mind are our highest priorities while we bring premium service to your home.</p>
+          </div>
+          <div className="downloadService-link">
+            <p><span>DOWNLOAD ON THE </span> APP STORE</p>
+          </div>
+        </div>
       </div>
-      <div className="downloadService-content">
-        <p>Every professional on our platform undergoes a rigorous vetting process and security background check. Your safety and peace of mind are our highest priorities while we bring premium service to your home.</p>
+      <div className="footer">
+        <div className='footer-container'>
+          <div className='logo'>
+            <h1>
+              BUSY <span className='logo-span'>BEE</span>
+            </h1>
+            <p>Premium home service designed for modern African living </p>
+          </div>
+          <div className="footer-quicklinks">
+            <h1>QUICKLINKS</h1>
+            <ul>
+              <li>Home</li>
+              </ul>
+          </div>
+          
+        </div>
+        <p className='copyright'>© 2026 BusyBee. All rights reserved.</p>
       </div>
-      
-    </div>
-
-
-
     </>
   )
 }

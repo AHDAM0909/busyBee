@@ -74,9 +74,7 @@
   color: #FCA311;
 }
 
-/* =========================
-   UNDERLINE ANIMATION
-========================= */
+/* UNDERLINE ANIMATION */
 
 .nav-links::after{
   content: '';
@@ -100,9 +98,9 @@
   width: 100%;
 }
 
-/* =========================
+/*
    MENU BUTTON
-========================= */
+ */
 
 .menu-toggle{
   display: none;
@@ -113,9 +111,7 @@
   cursor: pointer;
 }
 
-/* =========================
-   MOBILE MENU
-========================= */
+/*  MOBILE MENU */
 
 .nav-mobile{
   display: none;

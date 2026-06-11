@@ -189,15 +189,11 @@
 
 .workService h3::after{
   content: '';
-
   position: absolute;
-
   left: 0;
   bottom: -6px;
-
   width: 0;
   height: 3px;
-
   background-color: #FCA311;
 
   transition: 0.4s ease;
@@ -221,13 +217,85 @@
   padding: 60px 20px;
   color: white;
   margin: 3rem auto;
-  max-width: 1200px;
-    height: 100%;
+  max-width: 1100px;
+  height: 100%;
+  border-radius: 16px;
 }
-.downloadService-conatiner {
+.downloadService-container h1{
   width: 100%;
-  max-width: 30px;
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
+
+.downloadService-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+.downloadService-content p{
+  font-size: 16px;
+  color: white;
+  line-height: 1.7;
+}
+.downloadService-link{
+  width: 100%;
+  max-width: 200px;
+  padding: 15px 20px;
+  background-color: black;
+  color: #FCA311;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.downloadService-link span{
+  color: #333;
+  transition: 0.3s ease;
+}
+.downloadService-link:hover span{
+  color: white;
+}
+.downloadService-link:hover{
+  background-color: #333;
+  color: white;
+  transition: 0.3s ease;
+}
+.footer{
+  width: 100%;
+  padding: 20px;
+  background-color: #0F4C5C;
+  position:sticky;
+  z-index: 1000;
+}
+.footer-container{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.logo h1{
+  color: #00B4D8;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo h1:hover{
+  color: #FCA311;
+}
+
+/* LOGO SPAN */
+
+.logo-span{
+  color: #FCA311;
+}
+
 
 
 
